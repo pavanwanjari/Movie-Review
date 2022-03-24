@@ -37,19 +37,19 @@
 ### Subtask 2.5: Find the Most Popular Trios - II
 * In the previous subtask you found the popular trio based on the total number of facebook likes. Let's add a small condition to it and make sure that all three actors are popular. The condition is none of the three actors' Facebook likes should be less than half of the other two. For example, the following is a valid combo:
 
-●	actor_1_facebook_likes: 70000
+  ●	actor_1_facebook_likes: 70000
 
-●	actor_2_facebook_likes: 40000
+  ●	actor_2_facebook_likes: 40000
 
-●	actor_3_facebook_likes: 50000
+  ●	actor_3_facebook_likes: 50000
 
 But the below one is not:
 
-●	actor_1_facebook_likes: 70000
+  ●	actor_1_facebook_likes: 70000
 
-●	actor_2_facebook_likes: 40000
+  ●	actor_2_facebook_likes: 40000
 
-●	actor_3_facebook_likes: 30000
+  ●	actor_3_facebook_likes: 30000
 
 since in this case, actor_3_facebook_likes is 30000, which is less than half of actor_1_facebook_likes.
 Having this condition ensures that you aren't getting any unpopular actor in your trio (since the total likes calculated in the previous question doesn't tell anything about the individual popularities of each actor in the trio.).
