@@ -36,16 +36,25 @@
 * The dataframe has three columns to help you out for the same, viz. actor_1_facebook_likes, actor_2_facebook_likes, and actor_3_facebook_likes. Your objective is to find the trios which has the most number of Facebook likes combined. That is, the sum of actor_1_facebook_likes, actor_2_facebook_likes and actor_3_facebook_likes should be maximum. Find out the top 5 popular trios, and output their names in a list.
 ### Subtask 2.5: Find the Most Popular Trios - II
 * In the previous subtask you found the popular trio based on the total number of facebook likes. Let's add a small condition to it and make sure that all three actors are popular. The condition is none of the three actors' Facebook likes should be less than half of the other two. For example, the following is a valid combo:
+
 ●	actor_1_facebook_likes: 70000
+
 ●	actor_2_facebook_likes: 40000
+
 ●	actor_3_facebook_likes: 50000
+
 But the below one is not:
+
 ●	actor_1_facebook_likes: 70000
+
 ●	actor_2_facebook_likes: 40000
+
 ●	actor_3_facebook_likes: 30000
+
 since in this case, actor_3_facebook_likes is 30000, which is less than half of actor_1_facebook_likes.
 Having this condition ensures that you aren't getting any unpopular actor in your trio (since the total likes calculated in the previous question doesn't tell anything about the individual popularities of each actor in the trio.).
 You can do a manual inspection of the top 5 popular trios you have found in the previous subtask and check how many of those trios satisfy this condition. Also, which is the most popular trio after applying the condition above?
+
 ### Subtask 2.6: Runtime Analysis
 * There is a column named Runtime in the dataframe which primarily shows the length of the movie. It might be intersting to see how this variable this distributed. Plot a histogram or distplot of seaborn to find the Runtime range most of the movies fall into.
 
@@ -79,4 +88,5 @@ You can do a manual inspection of the top 5 popular trios you have found in the 
 4.	Write your any three inferences from this plot. You can make use of the previous bar plot also here for better insights. Refer to this link- https://seaborn.pydata.org/generated/seaborn.heatmap.html. You might have to plot something similar to the fifth chart in this page (You have to plot two such heatmaps side by side).
 5.	Repeat subtasks 1 to 4, but now instead of taking the CVotes-related columns, you need to do the same process for the Votes-related columns. These heatmaps will show you how the two genders have rated movies across various genres.
 You might need the below link for formatting your heatmap. https://stackoverflow.com/questions/56942670/matplotlib-seaborn-first-and-last-row-cut-in-half-of-heatmap-plot
+
 ●	Note : Use genre_top10 dataframe for this subtask
